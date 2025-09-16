@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadwal Kuliah - Faturahman Alfarisi</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: "Times New Roman", serif; margin: 24px; color: #333; }
+    .wrap { max-width: 950px; margin: 0 auto; }
+
+    /* Header identitas + judul */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .identitas {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .identitas strong { font-weight: bold; }
+    .judul {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      flex: 1;
+    }
+
+    /* Tabel */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 3px solid #666;
+    }
+    th, td {
+      border: 1px solid #777;
+      padding: 8px 10px;
+      vertical-align: middle;
+    }
+    thead th, tfoot td {
+      background: #666;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+    td.hari { text-align: center; font-weight: bold; white-space: nowrap; }
+    td.jam { text-align: center; white-space: nowrap; }
+    td.matkul, td.dosen, td.ruang { text-align: left; }
+    tfoot td { text-align: center; padding: 10px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Bagian Header -->
+    <div class="header">
+      <div class="identitas">
+        <p><strong>Nama:</strong> Faturahman Alfarisi</p>
+        <p><strong>Kampus:</strong> STT Terpadu Nurul Fikri</p>
+      </div>
+      <div class="judul">Jadwal Perkuliahan</div>
+    </div>
+
+    <!-- Tabel Jadwal -->
+    <table aria-label="Jadwal Perkuliahan">
+      <thead>
+        <tr>
+          <th>HARI</th>
+          <th>JAM</th>
+          <th>MATA KULIAH</th>
+          <th>DOSEN</th>
+          <th>RUANG</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- SENIN -->
+        <tr>
+          <td class="hari" rowspan="2">SENIN</td>
+          <td class="jam">08.00 - 10.00</td>
+          <td class="matkul">Kajian Islam</td>
+          <td class="dosen">Ust. Anwar Nashidin, Lc.</td>
+          <td class="ruang">Ruang Teori</td>
+        </tr>
+        <tr>
+          <td class="jam">10.00 - 12.00</td>
+          <td class="matkul">Aplikasi Perkantoran</td>
+          <td class="dosen">Drs. MGS Hendri, M.M</td>
+          <td class="ruang" rowspan="5">Ruang I</td>
+        </tr>
+
+        <!-- SELASA -->
+        <tr>
+          <td class="hari" rowspan="2">SELASA</td>
+          <td class="jam">08.00 - 10.00</td>
+          <td class="matkul">Linux Fundamental</td>
+          <td class="dosen">Henry Saptono, S.Si., M.Kom</td>
+        </tr>
+        <tr>
+          <td class="jam">10.00 - 12.00</td>
+          <td class="matkul">Html, Css &amp; Javascript</td>
+          <td class="dosen" rowspan="3">Sirojul Munir, S.Si, M.Kom</td>
+        </tr>
+
+        <!-- RABU -->
+        <tr>
+          <td class="hari" rowspan="2">RABU</td>
+          <td class="jam">08.00 - 10.00</td>
+          <td class="matkul">Basis Data</td>
+        </tr>
+        <tr>
+          <td class="jam">10.00 - 12.00</td>
+          <td class="matkul">Algoritma dan Pemograman</td>
+        </tr>
+
+        <!-- KAMIS -->
+        <tr>
+          <td class="hari" rowspan="2">KAMIS</td>
+          <td class="jam">08.00 - 10.00</td>
+          <td class="matkul">Kewirausahaan &amp; Pengembangan Diri</td>
+          <td class="dosen">Khoirul Umam, S.Pd</td>
+          <td class="ruang" rowspan="2">Ruang Teori</td>
+        </tr>
+        <tr>
+          <td class="jam">10.00 - 12.00</td>
+          <td class="matkul">Bahasa Inggris</td>
+          <td class="dosen">Drs. Mahfudz</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">JADWAL DAPAT BERUBAH SEWAKTU-WAKTU</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>
