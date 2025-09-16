@@ -1,0 +1,139 @@
+/* ==== Gaya Umum (Global) ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font lebih modern */
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0; /* Menghilangkan margin putih di sekitar frame */
+    padding: 15px; /* Memberi jarak konten dari tepi frame */
+    box-sizing: border-box; /* Memastikan padding tidak merusak layout */
+}
+
+/* ==== Header & Footer ==== */
+header, footer {
+    /* Gradient untuk tampilan yang lebih profesional */
+    background-image: linear-gradient(to right, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2em; /* Sedikit lebih besar */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Efek bayangan pada teks */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* ==== Judul Konten Utama (di home, study, gallery) ==== */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* ==== Navigasi ==== */
+nav {
+    background-color: #3498db;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+/* ==== Konten Samping (Fieldset) ==== */
+fieldset {
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #ffffff;
+    height: 95%; /* Membuat tinggi fieldset konsisten */
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* ==== Tabel (study.html) ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8; /* Warna selang-seling (zebra) */
+}
+
+tr:hover {
+    background-color: #e2eafc; /* Warna highlight saat hover */
+}
+
+/* ==== Galeri (gallery.html) ==== */
+.gallery-container {
+    text-align: center;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Penyesuaian untuk Marquee */
+hr.separator {
+    margin: 25px 10px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+marquee img {
+    margin: 0 20px; /* Memberi jarak antar gambar di dalam marquee */
+}
